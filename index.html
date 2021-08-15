@@ -451,14 +451,11 @@
                 <span class="abstract-title-text">暴力解决GIT出错</span>
             </a>
             <div class="abstract-content">
-                昨天在PUSH GIT时报错The requested URL returned error: 403经过研究总结了以下几种方法：##那我就简单凡尔赛一下吧！
-##修改.git config配置文件
-这种情况可能远程仓库没给你开权限，这个也会导致你无法上传本地代码也有可能，gitconfig配置文件账号密码没改回去。
-###更改Windows凭证
-另一种可能就是Windows凭证里的账号密码没改回去，自己手动更改就OK啦！
-###使用SSH公钥
-Gitee 提供了基于SSH协议的Git服务，在使用SSH协议访问仓库之前，需要先配置好账户/仓库的SSH公钥。可以在git里输入命令：
-12s...
+                昨天在PUSH GIT时报错The requested URL returned error: 403经过研究总结了以下几种方法：
+那我就简单凡尔赛一下吧！修改.git config配置文件这种情况可能远程仓库没给你开权限，这个也会导致你无法上传本地代码也有可能，gitconfig配置文件账号密码没改回去。
+更改Windows凭证另一种可能就是Windows凭证里的账号密码没改回去，自己手动更改就OK啦！
+使用SSH公钥Gitee 提供了基于SSH协议的Git服务，在使用SSH协议访问仓库之前，需要先配置好账户/仓库的SSH公钥。可以在git里输入命令：
+12ssh-keygen -t ...
             </div>
             <div class="abstract-post-meta">
                 <!-- date -->
