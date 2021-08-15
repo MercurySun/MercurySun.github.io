@@ -20,18 +20,22 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+    <meta name="description" content="昨天在PUSH GIT时报错The requested URL returned error: 403经过研究总结了以下几种方法：##那我就简单凡尔赛一下吧！ ##修改.git config配置文件 这种情况可能远程仓库没给你开权限，这个也会导致你无法上传本地代码也有可能，gitconfig配置文件账号密码没改回去。 ###更改Windows凭证 另一种可能就是Windows凭证里的账号密码没改回">
+<meta property="og:type" content="article">
+<meta property="og:title" content="暴力解决GIT出错">
+<meta property="og:url" content="http://example.com/2021/08/15/%E8%A7%A3%E5%86%B3%E4%BB%A3%E7%A0%81git%E5%87%BA%E9%94%99/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="昨天在PUSH GIT时报错The requested URL returned error: 403经过研究总结了以下几种方法：##那我就简单凡尔赛一下吧！ ##修改.git config配置文件 这种情况可能远程仓库没给你开权限，这个也会导致你无法上传本地代码也有可能，gitconfig配置文件账号密码没改回去。 ###更改Windows凭证 另一种可能就是Windows凭证里的账号密码没改回">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-08-15T00:40:53.970Z">
+<meta property="article:modified_time" content="2021-08-15T01:19:35.830Z">
 <meta property="article:author" content="Sun ChaoYue">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
     
-    <title>Sun ChaoYue&#39;s Studio</title>
+    <title>暴力解决GIT出错 · Sun ChaoYue&#39;s Studio</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -219,6 +223,8 @@
         }
     </script>
     
+        <body class="post-body">
+    
         <!-- header -->
         <header class="header header-mobile">
     <!-- top read progress line -->
@@ -248,6 +254,17 @@
     </div>
     <!-- toggle banner for post layout -->
     
+        
+            <div class="banner">
+        
+            <div class="blog-title header-element">
+                <a href="/">Sun ChaoYue&#39;s Studio.</a>
+            </div>
+            <div class="post-title header-element">
+                <a href="#" class="post-name">暴力解决GIT出错</a>
+            </div>
+        </div>
+    
 </header>
 
         <!-- dark mode -->
@@ -276,24 +293,71 @@
 
 
 
+    height:50vh;
+
 ">
     
     <!-- 主页  -->
+    
+        
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+                暴力解决GIT出错
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+                
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页 meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">511</span>Reading time: <span class="post-count reading-time">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <!-- 撰写日期 -->
+                    <span class="iconfont-archer post-intro-calander">&#xe676;</span>
+                    <span class="post-intro-time">2021/08/15</span>
+                    <!-- busuanzi -->
+                    
+                        <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                            <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    
+                    <!-- 文章分享 -->
+                    <span class="share-wrapper">
+                        <span class="iconfont-archer share-icon">&#xe71d;</span>
+                        <span class="share-text">Share</span>
+                        <ul class="share-list">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -423,66 +487,79 @@
         
             <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
             <div class="container container-unloaded">
-                <main class="main index-page">
+                <main class="main post-page">
+    <article class="article-entry">
+        <p>昨天在PUSH GIT时报错The requested URL returned error: 403经过研究总结了以下几种方法：<br>##那我就简单凡尔赛一下吧！</p>
+<p>##修改.git config配置文件</p>
+<p>这种情况可能远程仓库没给你开权限，这个也会导致你无法上传本地代码<br>也有可能，gitconfig配置文件账号密码没改回去。</p>
+<p>###更改Windows凭证</p>
+<p>另一种可能就是Windows凭证里的账号密码没改回去，自己手动更改就OK啦！</p>
+<p>###使用SSH公钥</p>
+<p>Gitee 提供了基于SSH协议的Git服务，在使用SSH协议访问仓库之前，需要先配置好账户/仓库的SSH公钥。<br>可以在git里输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;xxxxx@xxxxx.com&quot;</span></span><br><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>这样就生成了ssh key，然后就可以部署公钥了。（我就是这样解决的！！！）<br>输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@gitee.com</span><br></pre></td></tr></table></figure>
+<p>查看是否部署成功。</p>
+<p>###更改.git config配置文件</p>
+<p>没错！又是更改配置文件，在代码的.git/config文件内[remote “origin”]的url的gitlab域名前添加gitlab注册时的“用户名:密码@”<br>另外发现这个用户要在对应项目下的角色是Owner或Master才行，如果是Guest、Reporter、Developer，则如下操作后也是不行。<br>如下，gitlab的用户名是sunchaoyue，假设密码是CY@sun12378$^8<br>然后修改代码里的.git/config文件:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[root@test-huanqiu weixin]<span class="comment"># cd .git</span></span><br><span class="line">[root@test-huanqiu .git]<span class="comment"># cat config</span></span><br><span class="line">[core]</span><br><span class="line">repositoryformatversion = 0</span><br><span class="line">filemode = <span class="literal">true</span></span><br><span class="line">bare = <span class="literal">false</span></span><br><span class="line">logallrefupdates = <span class="literal">true</span></span><br><span class="line">[remote <span class="string">&quot;origin&quot;</span>]</span><br><span class="line">fetch = +refs/heads/*:refs/remotes/origin/*</span><br><span class="line">url = http://git.sunchaoyue.net:8848/wechat/wechat.git</span><br><span class="line">[branch <span class="string">&quot;master&quot;</span>]</span><br><span class="line">remote = origin</span><br><span class="line">merge = refs/heads/master</span><br></pre></td></tr></table></figure>
+<p>修改如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[root@test-huanqiu .git]<span class="comment"># cat config</span></span><br><span class="line">[core]</span><br><span class="line">repositoryformatversion = 0</span><br><span class="line">filemode = <span class="literal">true</span></span><br><span class="line">bare = <span class="literal">false</span></span><br><span class="line">logallrefupdates = <span class="literal">true</span></span><br><span class="line">[remote <span class="string">&quot;origin&quot;</span>]</span><br><span class="line">fetch = +refs/heads/*:refs/remotes/origin/*</span><br><span class="line">url = http://sunchaoyue:CY@sun12378$^8@git.sunchaoyue.net:8848/wechat/wechat.git</span><br><span class="line">[branch <span class="string">&quot;master&quot;</span>]</span><br><span class="line">remote = origin</span><br><span class="line">merge = refs/heads/master</span><br></pre></td></tr></table></figure>
+<p>然后再次git push，发现可以正常提交了！</p>
+<p>OK这就是我的全部解决方案，希望对你们有帮助，本来想码几张帅气的照片算了吧，今天就不臭屁了，想我就加我微信哦！拜拜！！！</p>
+
+    </article>
+    <!-- license -->
     
-        
-        
-        
+        <div class="license-wrapper">
+            <p>Author：孙超越</p>
+            <p>发表日期：August 15th 2021, 8:40:53 am</p>
+            <p>更新日期：August 15th 2021, 9:19:35 am</p>
+            <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator -->
+    <ul class="post-paginator">
+        <li class="next">
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2021/08/15/%E8%A7%A3%E5%86%B3%E4%BB%A3%E7%A0%81git%E5%87%BA%E9%94%99/">
-                
-                <span class="abstract-title-text">暴力解决GIT出错</span>
-            </a>
-            <div class="abstract-content">
-                昨天在PUSH GIT时报错The requested URL returned error: 403经过研究总结了以下几种方法：##那我就简单凡尔赛一下吧！
-##修改.git config配置文件
-这种情况可能远程仓库没给你开权限，这个也会导致你无法上传本地代码也有可能，gitconfig配置文件账号密码没改回去。
-###更改Windows凭证
-另一种可能就是Windows凭证里的账号密码没改回去，自己手动更改就OK啦！
-###使用SSH公钥
-Gitee 提供了基于SSH协议的Git服务，在使用SSH协议访问仓库之前，需要先配置好账户/仓库的SSH公钥。可以在git里输入命令：
-12s...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/15</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
+        </li>
+        <li class="previous">
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2021/08/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">
-                
-                <span class="abstract-title-text">我的第一篇博客文章</span>
-            </a>
-            <div class="abstract-content">
-                欢迎来到我的私人博客 [Sun ChaoYue’s Studio]!这是我第一次写博客（不知道该写什么！），这个网站是我用一个晚上搭建起来的，搭建过程屡屡受阻出现各种错误，尤其在搭建环境时总是出错，好在经过了一晚上的改错终于将博客搭建了起来，此后我也会在此平台记录生活。
-今天就先水一期吧！说说今天学了什么先是学了JavaScript：前几天学了HTML和CSS，这几天都是在啃JavaScript，今天主要是看了有关DOM操作的部分，其实浏览器就是一个DOM树形结构，浏览器大部分都是在操作DOM对象，若要操作DOM结点首先要获得一个DOM结点：
-1document.getElementBy...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/12</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2021/08/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" title="我的第一篇博客文章">
+                    <div class="prevTitle">我的第一篇博客文章</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- comment -->
+     
+        <div class="post-comment">
+            <!-- 来必力 City 版安装代码 -->
+
+
+            
+
+            
+
+            
+
+            <!-- utteranc评论 -->
+
+
+            <!-- partial('_partial/comment/changyan') -->
+            <!--PC版-->
+
+
+            
+            
+
+        </div>
     
-    <!-- paginator  -->
+    <!-- timeliness note -->
+    <!-- idea from: https://hexo.fluid-dev.com/posts/hexo-injector/#%E6%96%87%E7%AB%A0%E6%97%B6%E6%95%88%E6%80%A7%E6%8F%90%E7%A4%BA -->
+    
+    <!-- Mathjax -->
     
 </main>
 
@@ -580,6 +657,23 @@ Gitee 提供了基于SSH协议的Git服务，在使用SSH协议访问仓库之�
 
         </div>
         <!-- toc -->
+        
+            <div class="toc-wrapper" style=
+
+
+
+
+
+
+
+    top:50vh;
+
+>
+                <div class="toc-catalog">
+                    <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+                </div>
+                
+            </div>
         
         <!-- sidebar -->
         <div class="sidebar sidebar-hide">
@@ -692,6 +786,8 @@ Gitee 提供了基于SSH协议的Git服务，在使用SSH协议访问仓库之�
         <!-- CNZZ -->
         
         <!-- async load share.js -->
+        
+            <script src="/scripts/share.js" async></script>    
         
         <!-- mermaid -->
         
